@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Extension\Tinfot\Discourse\Exceptions;
+
+use App\Extension\Tinfot\Discourse\Exception;
+
+/**
+ *
+ * Discourse User Exception
+ *
+ * @category   Discourse
+ * @version    1.0.0
+ * @package    tinfot/discourse-sso
+ * @copyright  Copyright (c) 2017 - 2018 Richard Tian (http://www.richard.lol)
+ * @author     Richard <richard_tianke@qq.com>
+ * @license    https://mit-license.org/    MIT
+ */
+class UserException extends Exception {
+    /**
+     * Class constructor
+     *
+     * @param string $message Error message
+     * @param int $code Error code
+     */
+    function __construct($message = null, $code = 0) {
+        parent::__construct($message, $code);
+    }
+}

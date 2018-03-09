@@ -1,0 +1,42 @@
+{
+  "name": "tinfot/discourse-sso",
+  "type": "library",
+  "description": "Laravel Discourse SSO",
+  "homepage": "https://github.com/tinfot/discourse-sso",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "keywords": [
+    "laravel",
+    "discourse",
+    "sso",
+    "discourse-sso"
+  ],
+  "authors": [
+    {
+      "name": "Richard Tian",
+      "email": "richard_tianke@qq.com",
+      "homepage": "http://richard.lol",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/tinfot/discourse-sso"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Tinfot\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=5.6.4"
+  },
+  "require-dev": {
+    "mockery/mockery": "~0.9",
+    "phpunit/phpunit": "~4.8",
+    "ext-curl": "*"
+  }
+}
