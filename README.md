@@ -3,11 +3,7 @@
 
 ---
 
-[![Latest Stable Version](https://poser.pugx.org/maatwebsite/excel/v/stable.png)](https://packagist.org/packages/tinfot/discourse-sso) 
-[![Total Downloads](https://poser.pugx.org/maatwebsite/excel/downloads.png)](https://packagist.org/packages/tinfot/discourse-sso)  
 [![License](https://poser.pugx.org/maatwebsite/excel/license.png)](https://packagist.org/packages/tinfot/discourse-sso)
-[![Monthly Downloads](https://poser.pugx.org/maatwebsite/excel/d/monthly.png)](https://packagist.org/packages/tinfot/discourse-sso)
-[![Daily Downloads](https://poser.pugx.org/maatwebsite/excel/d/daily.png)](https://packagist.org/packages/tinfot/discourse-sso)
 
 # Installation
 Require this package in your composer.json and update composer. 
@@ -19,7 +15,6 @@ composer require tinfot/discourse-sso:dev-master
 # Usage
 
 ```php
-
 <?php
 
 namespace App\Http\Controllers;
@@ -46,7 +41,6 @@ class DiscourseController extends Controller {
         return redirect(config('discourse.discourse_url') . $data);
     }
 }
-?>
 ```
 
 # Support
