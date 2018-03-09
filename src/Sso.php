@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Extension\Tinfot\Discourse;
+namespace Tinfot\Discourse;
 
-use App\Extension\Tinfot\Discourse\Contracts\Sso as SsoContract;
+use Tinfot\Discourse\Contracts\Sso as SsoContract;
 
 /**
  * Class Sso

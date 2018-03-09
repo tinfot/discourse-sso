@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Extension\Tinfot\Discourse;
+namespace Tinfot\Discourse;
 
 /**
  * Class Exception

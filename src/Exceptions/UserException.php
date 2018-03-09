@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Extension\Tinfot\Discourse\Exceptions;
+namespace Tinfot\Discourse\Exceptions;
 
-use App\Extension\Tinfot\Discourse\Exception;
+use Tinfot\Discourse\Exception;
 
 /**
  *

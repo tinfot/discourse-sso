@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Extension\Tinfot\Discourse\Contracts;
+namespace Tinfot\Discourse\Contracts;
 
 /**
  * Interface Sso

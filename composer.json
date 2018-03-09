@@ -28,7 +28,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Tinfot\\": "src/"
+      "Tinfot\\Discourse\\": "src/"
     }
   },
   "require": {

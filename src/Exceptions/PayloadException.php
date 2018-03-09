@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Extension\Tinfot\Discourse\Exceptions;
+namespace Tinfot\Discourse\Exceptions;
 
-use App\Extension\Tinfot\Discourse\Exception;
+use Tinfot\Discourse\Exception;
 
 /**
  *
- * Discourse SSO Exception
+ * Discourse Payload Exception
  *
  * @category   Discourse
  * @version    1.0.0
@@ -15,7 +15,7 @@ use App\Extension\Tinfot\Discourse\Exception;
  * @author     Richard <richard_tianke@qq.com>
  * @license    https://mit-license.org/    MIT
  */
-class SsoException extends Exception {
+class PayloadException extends Exception {
     /**
      * Class constructor
      *

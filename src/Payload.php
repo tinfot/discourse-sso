@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Extension\Tinfot\Discourse;
+namespace Tinfot\Discourse;
 
-use App\Extension\Tinfot\Discourse\Contracts\Payload as PayloadContract;
-use App\Extension\Tinfot\Discourse\Exceptions\PayloadException;
+use Tinfot\Discourse\Contracts\Payload as PayloadContract;
+use Tinfot\Discourse\Exceptions\PayloadException;
 
 class Payload implements PayloadContract {
 

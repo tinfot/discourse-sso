@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Extension\Tinfot\Discourse;
+namespace Tinfot\Discourse;
 
-use App\Extension\Tinfot\Discourse\Contracts\User as UserContract;
+use Tinfot\Discourse\Contracts\User as UserContract;
 
 class User implements UserContract {
 
