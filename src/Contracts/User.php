@@ -15,7 +15,8 @@ interface User {
      * @param string $email
      * @param null $name
      * @param null $username
+     * @param null $avatar_url
      */
-    public function __construct($id, $email, $name = null, $username = null);
+    public function __construct($id, $email, $name = null, $username = null, $avatar_url = null);
 
 }

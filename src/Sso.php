@@ -15,17 +15,29 @@ class Sso implements SsoContract {
     private $secret;
     private $parameters = [];
 
+    /**
+     * Sso constructor.
+     *
+     * @param string $nonce
+     * @param string $secret
+     */
     public function __construct($nonce, $secret) {
         $this->nonce  = $nonce;
         $this->secret = $secret;
     }
 
+    /**
+     * Set sso parameters
+     *
+     * @param User $model
+     */
     public function setParameters(User $model) {
         $this->parameters = [
             'nonce'       => $this->nonce,
-            'external_id' => $model->getId(),
-            'email'       => $model->getEmail(),
-            'name'        => $model->getName(),
+            'external_id' => $model->id,
+            'email'       => $model->email,
+            'name'        => $model->name,
+            'avatar_url'  => $model->avatar_url,
         ];
     }
 

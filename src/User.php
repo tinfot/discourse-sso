@@ -4,33 +4,54 @@ namespace Tinfot\Discourse;
 
 use Tinfot\Discourse\Contracts\User as UserContract;
 
+/**
+ * Class User
+ *
+ * @package Tinfot\Discourse
+ */
 class User implements UserContract {
 
-    private $id;
-    private $email;
-    private $name;
-    private $username;
+    public $id;
+    public $email;
+    public $name;
+    public $username;
+    public $avatar_url;
 
-    public function __construct($id, $email, $name = null, $username = null) {
-        $this->id       = $id;
-        $this->email    = $email;
-        $this->name     = $name;
-        $this->username = $username;
+    /**
+     * User constructor.
+     *
+     * @param int $id
+     * @param string $email
+     * @param null $name
+     * @param null $username
+     * @param null $avatar_url
+     */
+    public function __construct($id, $email, $name = null, $username = null, $avatar_url = null) {
+        $this->id         = $id;
+        $this->email      = $email;
+        $this->name       = $name;
+        $this->username   = $username;
+        $this->avatar_url = $avatar_url;
     }
 
-    public function getId() {
-        return $this->id;
+    /**
+     * Set undefined property
+     *
+     * @param $name
+     * @param $value
+     */
+    public function __set($name, $value) {
+        $this->$name = $value;
     }
 
-    public function getEmail() {
-        return $this->email;
-    }
-
-    public function getName() {
-        return $this->name;
-    }
-
-    public function getUsername() {
-        return $this->username;
+    /**
+     * Get undefined property
+     *
+     * @param $name
+     *
+     * @return mixed
+     */
+    public function __get($name) {
+        return $this->$name;
     }
 }
