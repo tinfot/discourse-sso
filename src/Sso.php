@@ -42,6 +42,15 @@ class Sso implements SsoContract {
     }
 
     /**
+     * Set extra sso parameters
+     *
+     * @param array $parameters
+     */
+    public function extraParameters($parameters = []) {
+        $this->parameters = array_merge($this->parameters, $parameters);
+    }
+
+    /**
      * Build parameters
      *
      * @param Payload $model
